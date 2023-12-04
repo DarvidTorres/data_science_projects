@@ -1,5 +1,5 @@
 ---
-title: "Quarto Basics"
+title: "Basic Web Scraping using pandas"
 author: Darvid
 date: today
 format:
@@ -10,15 +10,18 @@ theme:
   dark: darkly
 ---
 
-# 1 Read .csv files from URL using pandas
+## Read .csv file from URL using pandas
 
 Website: [Football-Data](https://www.football-data.co.uk/data.php)
 
 ```{python}
 import pandas as pd
 
-data = pd.read_csv(
+df_premier = pd.read_csv(
     'https://www.football-data.co.uk/mmz4281/2324/E0.csv'
 )
-data.head()
+
+names = df_premier.columns.tolist()
+count_names = pd.Series(names)
+count_names.value_counts()
 ```
