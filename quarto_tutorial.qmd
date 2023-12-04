@@ -1,11 +1,13 @@
 ---
 title: "Quarto Basics"
 author: Darvid
-date: today()
+date: 12/04/2023
 format:
   html:
     code-fold: true
 jupyter: python3
+theme:
+  dark: darkly
 ---
 
 For a demonstration of a line plot on a polar axis, see @fig-polar.
