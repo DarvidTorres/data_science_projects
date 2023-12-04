@@ -71,6 +71,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="web_scraping_pandas_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="web_scraping_pandas_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="web_scraping_pandas_files/libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 </head>
@@ -113,12 +116,173 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="read-.csv-files-from-url-using-pandas" class="level1">
 <h1>1 Read .csv files from URL using pandas</h1>
 <p>Website: <a href="https://www.football-data.co.uk/data.php">Football-Data</a></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>df_premier <span class="op">=</span> pd.read_csv(<span class="st">'https://www.football-data.co.uk/mmz4281/2324/E0.csv'</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>df_premier</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell" data-execution_count="1">
-<div class="cell-output cell-output-display" data-execution_count="1">
-<p>The <em>radius</em> of the circle is <strong>10</strong>.</p>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://www.football-data.co.uk/mmz4281/2324/E0.csv'</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Div</th>
+<th data-quarto-table-cell-role="th">Date</th>
+<th data-quarto-table-cell-role="th">Time</th>
+<th data-quarto-table-cell-role="th">HomeTeam</th>
+<th data-quarto-table-cell-role="th">AwayTeam</th>
+<th data-quarto-table-cell-role="th">FTHG</th>
+<th data-quarto-table-cell-role="th">FTAG</th>
+<th data-quarto-table-cell-role="th">FTR</th>
+<th data-quarto-table-cell-role="th">HTHG</th>
+<th data-quarto-table-cell-role="th">HTAG</th>
+<th data-quarto-table-cell-role="th">...</th>
+<th data-quarto-table-cell-role="th">AvgC&lt;2.5</th>
+<th data-quarto-table-cell-role="th">AHCh</th>
+<th data-quarto-table-cell-role="th">B365CAHH</th>
+<th data-quarto-table-cell-role="th">B365CAHA</th>
+<th data-quarto-table-cell-role="th">PCAHH</th>
+<th data-quarto-table-cell-role="th">PCAHA</th>
+<th data-quarto-table-cell-role="th">MaxCAHH</th>
+<th data-quarto-table-cell-role="th">MaxCAHA</th>
+<th data-quarto-table-cell-role="th">AvgCAHH</th>
+<th data-quarto-table-cell-role="th">AvgCAHA</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>E0</td>
+<td>11/08/2023</td>
+<td>20:00</td>
+<td>Burnley</td>
+<td>Man City</td>
+<td>0</td>
+<td>3</td>
+<td>A</td>
+<td>0</td>
+<td>2</td>
+<td>...</td>
+<td>2.28</td>
+<td>1.50</td>
+<td>1.95</td>
+<td>1.98</td>
+<td>1.95</td>
+<td>1.97</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>1.92</td>
+<td>1.95</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>E0</td>
+<td>12/08/2023</td>
+<td>12:30</td>
+<td>Arsenal</td>
+<td>Nott'm Forest</td>
+<td>2</td>
+<td>1</td>
+<td>H</td>
+<td>2</td>
+<td>0</td>
+<td>...</td>
+<td>2.63</td>
+<td>-2.00</td>
+<td>1.95</td>
+<td>1.98</td>
+<td>1.93</td>
+<td>1.97</td>
+<td>2.01</td>
+<td>2.09</td>
+<td>1.95</td>
+<td>1.92</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>E0</td>
+<td>12/08/2023</td>
+<td>15:00</td>
+<td>Bournemouth</td>
+<td>West Ham</td>
+<td>1</td>
+<td>1</td>
+<td>D</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>2.12</td>
+<td>0.00</td>
+<td>2.02</td>
+<td>1.91</td>
+<td>2.01</td>
+<td>1.92</td>
+<td>2.06</td>
+<td>1.96</td>
+<td>1.96</td>
+<td>1.91</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>E0</td>
+<td>12/08/2023</td>
+<td>15:00</td>
+<td>Brighton</td>
+<td>Luton</td>
+<td>4</td>
+<td>1</td>
+<td>H</td>
+<td>1</td>
+<td>0</td>
+<td>...</td>
+<td>2.48</td>
+<td>-1.75</td>
+<td>2.01</td>
+<td>1.92</td>
+<td>2.00</td>
+<td>1.91</td>
+<td>2.14</td>
+<td>1.93</td>
+<td>2.00</td>
+<td>1.86</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>E0</td>
+<td>12/08/2023</td>
+<td>15:00</td>
+<td>Everton</td>
+<td>Fulham</td>
+<td>0</td>
+<td>1</td>
+<td>A</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>1.71</td>
+<td>-0.25</td>
+<td>2.06</td>
+<td>1.87</td>
+<td>2.04</td>
+<td>1.88</td>
+<td>2.08</td>
+<td>1.99</td>
+<td>1.98</td>
+<td>1.88</td>
+</tr>
+</tbody>
+</table>
+
+<p>5 rows × 106 columns</p>
+</div>
 </div>
 </div>
 </section>

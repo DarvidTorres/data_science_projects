@@ -14,15 +14,11 @@ theme:
 
 Website: [Football-Data](https://www.football-data.co.uk/data.php)
 
-```python
-df_premier = pd.read_csv('https://www.football-data.co.uk/mmz4281/2324/E0.csv')
-
-df_premier
-```
-
 ```{python}
-#| echo: false
-radius = 10
-from IPython.display import Markdown
-Markdown(f"The _radius_ of the circle is **{radius}**.")
+import pandas as pd
+
+data = pd.read_csv(
+    'https://www.football-data.co.uk/mmz4281/2324/E0.csv'
+)
+data.head()
 ```
