@@ -1,0 +1,58 @@
+---
+title: "Quarto Basics"
+author: Darvid
+date: 12/04/2023
+format:
+  html:
+    code-fold: true
+jupyter: python3
+theme:
+  dark: darkly
+---
+
+For a demonstration of a line plot on a polar axis, see @fig-polar.
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 4 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+This quarto thing is awesome, just look at the following @mermaid-diagram.
+
+```{python}
+#| label: mermaid-diagram
+#| fig-cap: "mermaid diagram"
+
+
+import base64
+from IPython.display import Image, display
+import matplotlib.pyplot as plt
+
+def mm(graph):
+    graphbytes = graph.encode("utf8")
+    base64_bytes = base64.b64encode(graphbytes)
+    base64_string = base64_bytes.decode("ascii")
+    display(Image(url="https://mermaid.ink/img/" + base64_string))
+
+mm("""
+graph LR;
+    A--> B & C & D;
+    B--> A & E;
+    C--> A & E;
+    D--> A & E;
+    E--> B & C & D;
+""")
+```
