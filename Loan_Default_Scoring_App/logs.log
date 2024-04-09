@@ -1,0 +1,102 @@
+2024-04-09 02:26:06,726:INFO:Initializing load_model()
+2024-04-09 02:26:06,726:INFO:load_model(model_name=D:\Git\Math\Math\Loan_Default_Scoring_App\data_science_projects\Loan_Default_Scoring_App\models\xgb_model_finalized, platform=None, authentication=None, verbose=True)
+2024-04-09 02:26:06,884:INFO:Initializing load_model()
+2024-04-09 02:26:06,884:INFO:load_model(model_name=D:\Git\Math\Math\Loan_Default_Scoring_App\data_science_projects\Loan_Default_Scoring_App\models\lgb_model_finalized, platform=None, authentication=None, verbose=True)
+2024-04-09 02:26:07,089:INFO:Initializing predict_model()
+2024-04-09 02:26:07,091:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['term', 'sub_grade',
+                                                            'addr_state',
+                                                            'verification_status',
+                                                            'emp_length'],
+                                      ml_usecase='classification',
+                                      numerical_features=['int_rate',
+                                                          'annual_inc',
+                                                          'revol_util',
+                                                          'funded_amnt',
+                                                          'delinq_2yrs',
+                                                          'inq_last_6mths',
+                                                          'acc_now_delinq',
+                                                          'open_il_6m',
+                                                          'open_il_12m',
+                                                          'open_il_24m',
+                                                          'total_bal_il',
+                                                          'all_util'...
+                               gamma=0, gpu_id=-1, grow_policy='depthwise',
+                               importance_type=None, interaction_constraints='',
+                               learning_rate=0.300000012, max_bin=256,
+                               max_cat_to_onehot=4, max_delta_step=0,
+                               max_depth=6, max_leaves=0, min_child_weight=1,
+                               missing=nan, monotone_constraints='()',
+                               n_estimators=100, n_jobs=-1, num_parallel_tree=1,
+                               predictor='auto', random_state=123, reg_alpha=0,
+                               reg_lambda=1, ...)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=True, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2024-04-09 02:26:07,091:INFO:Checking exceptions
+2024-04-09 02:26:07,091:INFO:Preloading libraries
+2024-04-09 02:26:38,220:INFO:Initializing load_model()
+2024-04-09 02:26:38,220:INFO:load_model(model_name=D:\Git\Math\Math\Loan_Default_Scoring_App\data_science_projects\Loan_Default_Scoring_App\models\xgb_model_finalized, platform=None, authentication=None, verbose=True)
+2024-04-09 02:26:38,401:INFO:Initializing load_model()
+2024-04-09 02:26:38,401:INFO:load_model(model_name=D:\Git\Math\Math\Loan_Default_Scoring_App\data_science_projects\Loan_Default_Scoring_App\models\lgb_model_finalized, platform=None, authentication=None, verbose=True)
+2024-04-09 02:26:38,558:INFO:Initializing predict_model()
+2024-04-09 02:26:38,558:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['term', 'sub_grade',
+                                                            'addr_state',
+                                                            'verification_status',
+                                                            'emp_length'],
+                                      ml_usecase='classification',
+                                      numerical_features=['int_rate',
+                                                          'annual_inc',
+                                                          'revol_util',
+                                                          'funded_amnt',
+                                                          'delinq_2yrs',
+                                                          'inq_last_6mths',
+                                                          'acc_now_delinq',
+                                                          'open_il_6m',
+                                                          'open_il_12m',
+                                                          'open_il_24m',
+                                                          'total_bal_il',
+                                                          'all_util'...
+                               gamma=0, gpu_id=-1, grow_policy='depthwise',
+                               importance_type=None, interaction_constraints='',
+                               learning_rate=0.300000012, max_bin=256,
+                               max_cat_to_onehot=4, max_delta_step=0,
+                               max_depth=6, max_leaves=0, min_child_weight=1,
+                               missing=nan, monotone_constraints='()',
+                               n_estimators=100, n_jobs=-1, num_parallel_tree=1,
+                               predictor='auto', random_state=123, reg_alpha=0,
+                               reg_lambda=1, ...)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=True, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2024-04-09 02:26:38,558:INFO:Checking exceptions
+2024-04-09 02:26:38,558:INFO:Preloading libraries
+2024-04-09 02:27:56,018:INFO:Initializing load_model()
+2024-04-09 02:27:56,018:INFO:load_model(model_name=D:\Git\Math\Math\Loan_Default_Scoring_App\data_science_projects\Loan_Default_Scoring_App\models\xgb_model_finalized, platform=None, authentication=None, verbose=True)
+2024-04-09 02:27:56,190:INFO:Initializing load_model()
+2024-04-09 02:27:56,190:INFO:load_model(model_name=D:\Git\Math\Math\Loan_Default_Scoring_App\data_science_projects\Loan_Default_Scoring_App\models\lgb_model_finalized, platform=None, authentication=None, verbose=True)
+2024-04-09 02:27:56,322:INFO:Initializing predict_model()
+2024-04-09 02:27:56,322:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['term', 'sub_grade',
+                                                            'addr_state',
+                                                            'verification_status',
+                                                            'emp_length'],
+                                      ml_usecase='classification',
+                                      numerical_features=['int_rate',
+                                                          'annual_inc',
+                                                          'revol_util',
+                                                          'funded_amnt',
+                                                          'delinq_2yrs',
+                                                          'inq_last_6mths',
+                                                          'acc_now_delinq',
+                                                          'open_il_6m',
+                                                          'open_il_12m',
+                                                          'open_il_24m',
+                                                          'total_bal_il',
+                                                          'all_util'...
+                               gamma=0, gpu_id=-1, grow_policy='depthwise',
+                               importance_type=None, interaction_constraints='',
+                               learning_rate=0.300000012, max_bin=256,
+                               max_cat_to_onehot=4, max_delta_step=0,
+                               max_depth=6, max_leaves=0, min_child_weight=1,
+                               missing=nan, monotone_constraints='()',
+                               n_estimators=100, n_jobs=-1, num_parallel_tree=1,
+                               predictor='auto', random_state=123, reg_alpha=0,
+                               reg_lambda=1, ...)]]), probability_threshold=None, encoded_labels=False, drift_report=False, raw_score=True, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None, drift_kwargs=None)
+2024-04-09 02:27:56,323:INFO:Checking exceptions
+2024-04-09 02:27:56,323:INFO:Preloading libraries
